@@ -22,3 +22,5 @@ Console.WriteLine(firstDigit > secondDigit ? $"Max = {firstDigit}" : $"Max = {se
 //     Console.WriteLine($"Max = {firstDigit}");
 //else 
 //     Console.WriteLine($"Max = {secondDigit}");
+//  или
+//      Console.WriteLine("Max = " + secondDigit ); без $
