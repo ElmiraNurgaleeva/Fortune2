@@ -12,3 +12,4 @@ if (num1 % num2 == 0) Console.WriteLine("-> кратно");
 else Console.WriteLine($"-> не кратно, остаток от деления - {num1 % num2}");
 
 Console.ReadKey();
+//Есть замечание : выводить в отдельную переменную то есть int num3 = num1 % num2 Потом исползовать для сравнения!
