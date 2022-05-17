@@ -4,3 +4,18 @@
 //A (3,6,8); B (2,1,-7), -> 15.84
 //A (7,-5, 0); B (1,-1,9) -> 11.53
 
+Console.Write("Enter the coordinates of the first point  ");
+double x1 = double.Parse(Console.ReadLine());
+double y1 = double.Parse(Console.ReadLine());
+double z1 = double.Parse(Console.ReadLine());
+
+Console.Write("Enter the coordinates of the second point  ");
+double x2 = double.Parse(Console.ReadLine());
+double y2 = double.Parse(Console.ReadLine());
+double z2 = double.Parse(Console.ReadLine());
+
+Console.Write("Distance between points = ");
+
+double distance = Math.Sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1)+(z2 - z1)*(z2 - z1));
+double n = Math.Round(distance, 2); 
+Console.Write(n);
