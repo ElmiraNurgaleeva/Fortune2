@@ -2,9 +2,12 @@
 //вход цифру, обозначающую день недели, и проверяет,
 //является ли этот день выходным. - РЕШАЕМ на семинаре еще раз
 
-var day = Convert.ToInt32(Console.ReadLine ());
-string[] isWeekend = {"нет", "нет","нет","нет", "нет","да","да" };
-if(day > 0 && day < 8)
+Console.WriteLine("введите номер дня недели: ");
+var day = Convert.ToInt32(Console.ReadLine());
+string[] isWeekend = { "нет", "нет", "нет", "нет", "нет", "Да", "Да", };
+if (day > 0 && day < 8)
 {
-    Console.WriteLine(isWeekend[day -1]);
+    Console.WriteLine(isWeekend[day - 1]);
+
 }
+else Console.WriteLine("Вы ввели не корректное значение!");
