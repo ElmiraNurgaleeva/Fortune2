@@ -10,4 +10,4 @@ if (day > 0 && day < 8)
     Console.WriteLine(isWeekend[day - 1]);
 
 }
-else Console.WriteLine("Вы ввели не корректное значение!");
+else Console.WriteLine("Вы ввели не корректное значение!"); 
