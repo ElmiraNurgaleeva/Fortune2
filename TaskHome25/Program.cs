@@ -4,7 +4,7 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-Console.WriteLine($"\nЗадача 25");
+Console.WriteLine($"\nЗадача 25 ");
 
 int Exponentiation(int numberA, int numberB){
   int result = 1;
