@@ -151,3 +151,17 @@ PrintArray(arr);
 SelectionSort(arr);
 
 PrintArray(arr);
+
+
+//Цикл for и выведем таблицу умножения Цикл в Цикле :
+
+//for (int i = 2; i < 10; i++)
+//{
+    //for (int j = 2; j < 10; j++)
+    //{
+        //Console.WriteLine($"{i} * {j} = {i * j}");
+    //}
+    //Console.WriteLine();  //Переход на новую строку Чтобы таблица 
+                          //умножения смотрелась удобнее 
+                          //Это искуственный разрыв
+//}

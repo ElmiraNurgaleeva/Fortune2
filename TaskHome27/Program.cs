@@ -3,7 +3,7 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-
+   
 Console.WriteLine($"\nЗадача 27 ");
 Console.Write("Введите число N: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
