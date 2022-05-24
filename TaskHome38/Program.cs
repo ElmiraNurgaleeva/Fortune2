@@ -3,40 +3,27 @@
 // элементов массива.
 // [3 7 22 2 78] -> 76
 
+Console.Clear();
+Console.WriteLine();
 
+Console.WriteLine("Задача38");
 
+double[] array = { 2, 3, 4, 5, 6.13, 7, 8, 9, 10, 20.12 };
+Console.WriteLine();
+Console.Write("Массив вещественных чисел : " + "2, 3, 4, 5, 6.13, 7, 8, 9, 10, 20.12");
+double max = array[0];
+double min = array[0];
 
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i] > max) max = array[i];
+    if (array[i] < min) min = array[i];
+}
 
-// Console.Clear();
-// Console.WriteLine();
-
-// int size = new Random().Next(1, 11);
-
-// System.Console.WriteLine($"Количетсов элементов массива: {size}");
-
-// double[] FillSourceArray(int size)
-// {
-//     double[] array = new double[size];
-//     for (int i = 0; i < size; i++)
-//     {
-//         array[i] = new Random().next Double() * 100;
-//     }
-//     return array;
-// }
-
-// void PrintDiffMinMax(double[] arr)
-// {
-//     for (int i = 0; i < arr.Length; i++)
-//     {
-//         System.Console.WriteLine(arr[i]);
-//     }
-//     int doubledifference = 0
-//     doubledifference = arr.Max() - arr.Min();
-//     Console.WriteLine($"Минимальное значение массива {arr.Min()}, максимальное значение массива {arr.Max()}");
-//     Console.WriteLine($"Разница между минимальным и максимальным значениями массива составляет {difference}");
-//     Console.WriteLine();
-// }
-
-// PrintDiffMinMax(FillSourceArray(size));
-// Console.WriteLine();
-
+Console.WriteLine();
+Console.Write("Max равен : " + max);
+Console.WriteLine();
+Console.Write("Min равен : " + min);
+Console.WriteLine();
+Console.Write("Разница между максимальным и минимальным элементом равна : ");
+Console.Write(max - min);
