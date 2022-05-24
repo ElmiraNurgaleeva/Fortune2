@@ -5,38 +5,37 @@
 // [-4, -6, 89, 6] -> 0
 
 
+Console.WriteLine("Задача36");
+void FillArray(int[] collection)
+{
+    int length = collection.Length;
+    int index = 0;
+    while (index < length)
+    {
+        collection[index] = new Random().Next(1, 100);
+        Console.WriteLine("Массив " + collection[index]);
+        index++;
+    }
+}
 
+void PrintArray(int[] col)   //Метод Войд который будет печатать массив
+{
+    int count = col.Length;
+    int position = 0;
+    int sum = 0;
 
+    while (position < count)
+    {
+        if (col[position] % 2 != 0)
+            Console.WriteLine("Нечетные элементы массива " + col[position]);
+        if (col[position] % 2 != 0) sum += col[position];
+        position++;
+    }
+    Console.WriteLine("Сумма нечетных элементов массива равна : " + sum);
+}
 
+int[] array = new int[10]; //в массиве будет 10 элементов 
+                           //new int [10] дословно создай новый массив в котором будет 10 элементов
 
-
-// Console.Clear();
-
-// int size = 20;
-
-// int[] FillArray( размер int)
-// {
-//     int[] array = new int[size];
-//     for (int i = 0; i < size; i++)
-//     {
-//         array[i] = new Random().Next(1, 100);
-//     }
-//     возвращаемый массив;
-// }
-
-// void printArray(int[] arr)
-// {
-//     int sum = 0;
-//     System.Console.WriteLine();
-//     for (int i = 0; i < size; i++)
-//     {
-//         System.Console.Write(arr[i] + " ");
-//         если (i % 2 > 0) sum += arr[i];
-//     }
-//     System.Console.WriteLine();
-//     System.Console.WriteLine($"Сумма чисел, стоящих на нечетной позиции, соcтаваляет {sum} ");
-//     System.Console.WriteLine();
-// }
-
-// PrintArray(FillArray(size));
-
+FillArray(array);
+PrintArray(array);
