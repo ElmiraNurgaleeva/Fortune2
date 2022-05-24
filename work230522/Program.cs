@@ -5,45 +5,80 @@
 // положительных чисел равна 29, сумма отрицательных равна
 // -20.
 
-int n = 12;        //1й вариант решения
-int min = -9;
-int max = 9;
+// int n = 12;        //1й вариант решения
+// int min = -9;
+// int max = 9;
 
-int[] createArray(int n, int min, int max)
+// int[] createArray(int n, int min, int max)
+// {
+//     int[] array = new int[n];
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     возвращаемый массив;
+// }
+
+// int[] PutSums(int[] arr)
+// {
+//     int[] sums = new int[2];
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         если (arr[i] < 0) суммы[0] += arr[i];
+//         else sums[1] += arr[i];
+//     }
+//     возврат сумм;
+// }
+
+// void PritArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write($"{array[i]} ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// PritArray(PutSums(createArray(n, min, max)));
+
+// // если нужно вывести сам массив, то так:
+
+// int[] array = createArray(n, min, max);
+// PritArray(массив);
+// PritArray(PutSums(array));
+
+
+// Задача 33: Задайте массив. Напишите программу, которая
+// определяет, присутствует ли заданное число в массиве.
+// 4; массив [6, 7, 19, 345, 3] -> нет
+// -3; массив [6, 7, 19, 345, 3] -> да
+
+Console.Write("Введите размер массива :");
+int size = int.Parse(Console.ReadLine());
+
+int[] num = new int [size];
+ 
+
+var  newRnd = new Random();
+for(int i = 0; i < size; i++)
 {
-    int[] array = new int[n];
-
-    for (int i = 0; i < n; i++)
-    {
-        array[i] = new Random().Next(min, max + 1);
-    }
-    возвращаемый массив;
+    num[i] = newRnd.Next(-100, 100);
+    Console.Write(num[i] + " ");
 }
+Console.WriteLine();
+Console.Write("Введите искомое число :");
+int n = int.Parse(Console.ReadLine());
 
-int[] PutSums(int[] arr)
+bool flag = false;
+
+for (int i = 0; i < size; i++)
 {
-    int[] sums = new int[2];
-    for (int i = 0; i < arr.Length; i++)
+    if (num[i] == n) 
     {
-        если (arr[i] < 0) суммы[0] += arr[i];
-        else sums[1] += arr[i];
+        flag = true;
+        break;
     }
-    возврат сумм;
 }
+Console.WriteLine(flag ?  "Yes": "No");
 
-void PritArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write($"{array[i]} ");
-    }
-    System.Console.WriteLine();
-}
-
-PritArray(PutSums(createArray(n, min, max)));
-
-// если нужно вывести сам массив, то так:
-
-int[] array = createArray(n, min, max);
-PritArray(массив);
-PritArray(PutSums(array));
