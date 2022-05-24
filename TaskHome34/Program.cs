@@ -17,7 +17,6 @@ void FillArray(int[] collection)    //Метод который сами опи�
     {
         collection[index] = new Random().Next(100, 1000);
         Console.WriteLine("Массив " + collection[index]);
-        //положить новое случайное число из диапазона от 1 до 10.
         index++;
     }
 }
@@ -27,22 +26,16 @@ void PrintArray(int[] col)   //Метод Войд который будет п�
     int count = col.Length;
     int position = 0;
 
-
-while (position < count)
+    while (position < count)
     {
-       
         if (col[position] % 2 == 0)
-        Console.WriteLine("Четные числа массива " + col[position]);
+            Console.WriteLine("Четные числа массива " + col[position]);
         position++;
     }
 }
 
 int[] array = new int[10]; //в массиве будет 10 элементов 
                            //new int [10] дословно создай новый массив в котором будет 10 элементов
-                       
+
 FillArray(array);
 PrintArray(array);
-
-
-
-
