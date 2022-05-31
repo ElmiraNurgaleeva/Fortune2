@@ -15,7 +15,7 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.Clear();
+
 Console.WriteLine($"m = {m}, n = {n}.");
 
 double[,] array = new double[m, n];
