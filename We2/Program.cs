@@ -94,32 +94,32 @@
 // элементов массива.
 // [3 7 22 2 78] -> 76
 
-Console.Clear();
-Console.WriteLine();
+// Console.Clear();
+// Console.WriteLine();
 
-Console.WriteLine("Задача38");
+// Console.WriteLine("Задача38");
 
-double[] array = { 2, 3, 4, 5, 6.13, 7, 8, 9, 10, 20.12 };
-Console.WriteLine();
-Console.Write("Массив вещественных чисел : " + "2, 3, 4, 5, 6.13, 7, 8, 9, 10, 20.12");
-double max = array[0];
-double min = array[0];
+// double[] array = { 2, 3, 4, 5, 6.13, 7, 8, 9, 10, 20.12 };
+// Console.WriteLine();
+// Console.Write("Массив вещественных чисел : " + "2, 3, 4, 5, 6.13, 7, 8, 9, 10, 20.12");
+// double max = array[0];
+// double min = array[0];
 
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i] > max) max = array[i];
-    
-    if (array[i] < min) min = array[i];
-     
-}
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (array[i] > max) max = array[i];
 
-Console.WriteLine();
-Console.Write("Max равен : " + max);
-Console.WriteLine();
-Console.Write("Min равен : " + min);
-Console.WriteLine();
-Console.Write("Разница между максимальным и минимальным элементом равна : ");
-Console.Write(max - min);
+//     if (array[i] < min) min = array[i];
+
+// }
+
+// Console.WriteLine();
+// Console.Write("Max равен : " + max);
+// Console.WriteLine();
+// Console.Write("Min равен : " + min);
+// Console.WriteLine();
+// Console.Write("Разница между максимальным и минимальным элементом равна : ");
+// Console.Write(max - min);
 
 
 
@@ -199,3 +199,43 @@ Console.Write(max - min);
 // PrintDiffMinMax(FillSourceArray(size));
 // Console.WriteLine();
 
+
+
+//Новая задача 01 06 22 с Ютуб
+
+// int sum = 100 + 200;
+// int dif = 700 - sum;
+// Console.WriteLine($"Сумма = {sum}, разница = {dif}");
+
+// int i = int.MaxValue;
+
+
+// double sum = 100 + 200;
+// double d = 700 / sum;
+// Console.WriteLine($"Сумма = {sum}, разница = {d}");
+
+// Console.WriteLine($"Введите коэф квадр уравнения ax^2 + bx + c = 0");
+// Console.WriteLine("а = ");
+
+// int a = int.Parse(Console.ReadLine());
+// Console.WriteLine(a);
+
+
+
+Console.WriteLine($"Введите коэф квадр уравнения ax^2 + bx + c = 0");
+
+Console.Write("а = ");
+int a = int.Parse(Console.ReadLine());
+
+Console.Write("b = ");
+int b = int.Parse(Console.ReadLine());
+
+Console.Write("c = ");
+int c = int.Parse(Console.ReadLine());
+
+double d = b * b - 4 * a * c;
+Console.WriteLine($"Дискриминант =   {d}");
+
+double x1 = (-b - Math.Sqrt(d))/2*a;
+double x2 = (-b + Math.Sqrt(d))/2*a;
+Console.WriteLine($"Корни уравнения x1 = {x1},  x2 = {x2}");
